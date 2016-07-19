@@ -6,6 +6,9 @@ const evId = '9459051';
 const loginUrl = 'https://www.stubhub.com/my/profile/';
 const eventUrl = 'https://sell.stubhub.com/simweb/sim/services/priceanalysis?eventId=' + evId;
 
+const email = 'YOUR_EMAIL';
+const password = 'YOUR_PASSWORD';
+
 nightmare
   .goto(loginUrl)
   .wait('#signin-form')
@@ -29,3 +32,11 @@ nightmare
   .catch(function (error) {
     console.log(error)
   });
+
+/* To Do:
+ * (1) set up separate functions for Sold & Unsold that are both called in `.evaluate`
+ * (2) paginate through results for Unsold tickets
+ * (3) record date & time that data was pulled + timestap json file
+ * (4) take an array of events (& don't login twice)
+ *     *nightmare is designed to have a single que running against a single Electron instance*
+ */
