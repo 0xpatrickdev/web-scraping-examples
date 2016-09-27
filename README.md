@@ -16,7 +16,7 @@ examples of web scraping using [x-ray](https://github.com/lapwinglabs/x-ray), [N
 - **google** - grab all the links from the google homepage
 - **weather** - grab the curent temperature and print it in the console
 - **zacks** - grab some information about a stock
-- **stubhub** - grab ticket sales information for a particular event
+- **stubhub** - grab ticket sales information for a particular event (after authentication)
 
 ## how to use this
 
